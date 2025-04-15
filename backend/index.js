@@ -22,7 +22,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({ 
    origin: [
-    "http://localhost:5173",                         // for local dev
+                            // for local dev
     "https://note-nu-opal.vercel.app",               // your Vercel frontend
                           
   ],
