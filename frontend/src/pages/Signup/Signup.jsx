@@ -114,7 +114,7 @@ const SignUp = () => {
       dispatch(signInStart());
       
       const res = await axios.post(
-        "http://localhost:3000/api/auth/signup",
+        "https://note-219z.onrender.com/api/auth/signup",
         {
           username: formData.username,
           email: formData.email,

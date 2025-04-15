@@ -92,7 +92,7 @@ const Login = () => {
       dispatch(signInStart());
       
       const res = await axios.post(
-        "http://localhost:3000/api/auth/signin",
+        "https://note-219z.onrender.com/api/auth/signin",
         { ...formData, rememberMe },
         { withCredentials: true }
       );
@@ -274,40 +274,7 @@ const Login = () => {
               </button>
             </form>
 
-            {/* Social Login */}
-            <div className="mt-6">
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <div className={`w-full border-t ${currentTheme.divider}`} />
-                </div>
-                <div className="relative flex justify-center">
-                  <span className={`px-3 ${currentTheme.cardBg} text-sm ${currentTheme.lightText} font-medium`}>
-                    Or continue with
-                  </span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-3 mt-5">
-                <button
-                  type="button"
-                  className={`flex items-center justify-center py-2 px-4 border ${currentTheme.socialBorder} 
-                             rounded-xl ${currentTheme.socialBg} transition-colors shadow-sm hover:shadow
-                             ${currentTheme.secondaryText} hover:text-[#6610f2] group`}
-                >
-                  <FaGoogle className="text-red-500 mr-2 group-hover:scale-110 transition-transform duration-200" size={16} />
-                  <span className="text-sm font-medium">Google</span>
-                </button>
-                <button
-                  type="button"
-                  className={`flex items-center justify-center py-2 px-4 border ${currentTheme.socialBorder} 
-                             rounded-xl ${currentTheme.socialBg} transition-colors shadow-sm hover:shadow
-                             ${currentTheme.secondaryText} hover:text-[#6610f2] group`}
-                >
-                  <FaFacebook className="text-blue-600 mr-2 group-hover:scale-110 transition-transform duration-200" size={16} />
-                  <span className="text-sm font-medium">Facebook</span>
-                </button>
-              </div>
-            </div>
+           
 
             {/* Sign Up Link */}
             <div className={`mt-6 text-center text-sm ${currentTheme.lightText}`}>
