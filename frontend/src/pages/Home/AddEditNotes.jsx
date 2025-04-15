@@ -68,7 +68,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
 
     try {
       const res = await axios.post(
-        "http://note-219z.onrender.com/api/note/edit/" + noteId,
+        "https://note-219z.onrender.com/api/note/edit/" + noteId,
         { title, content, tags },
         { withCredentials: true }
       );
@@ -91,7 +91,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
   const addNewNote = async () => {
     try {
       const res = await axios.post(
-        "http://note-219z.onrender.com/note/add",
+        "https://note-219z.onrender.com/note/add",
         { title, content, tags },
         { withCredentials: true }
       );

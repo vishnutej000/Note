@@ -313,7 +313,7 @@ const Home = () => {
 
     try {
       const res = await axios.delete(
-       "http://note-219z.onrender.com/api/note/delete/" + noteId,
+       "https://note-219z.onrender.com/api/note/delete/" + noteId,
         { withCredentials: true }
       );
 
@@ -331,7 +331,7 @@ const Home = () => {
 
   const onSearchNote = async (query) => {
     try {
-      const res = await axios.get("http://note-219z.onrender.com/api/note/search", {
+      const res = await axios.get("https://note-219z.onrender.com/api/note/search", {
         params: { query },
         withCredentials: true,
       });
@@ -359,7 +359,7 @@ const Home = () => {
 
     try {
       const res = await axios.put(
-        "http://note-219z.onrender.com/api/note/update-note-pinned/" + noteId,
+        "https://note-219z.onrender.com/api/note/update-note-pinned/" + noteId,
         { isPinned: !noteData.isPinned },
         { withCredentials: true }
       );
