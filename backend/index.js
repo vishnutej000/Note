@@ -23,7 +23,7 @@ app.use(cookieParser())
 app.use(cors({ 
    origin: [
                             // for local dev
-   "https://note-x9big3m6g-vishnu-tejs-projects.vercel.app",               // your Vercel frontend
+   "https://note-gamma-seven.vercel.app/",               // your Vercel frontend
                           
   ],
   credentials: true }))
