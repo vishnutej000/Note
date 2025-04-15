@@ -8,25 +8,34 @@
   }
 
   body {
-    background-color: rgb(241, 245, 241);
+    @apply bg-gray-50;
     overflow-x: hidden;
   }
 }
 
 @layer components {
   .input-box {
-    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+    @apply w-full text-sm bg-transparent border border-gray-300 px-5 py-3 rounded mb-4 outline-none;
   }
 
   .btn-primary {
-    @apply w-full text-sm bg-[#2B85FF] text-white p-2 rounded my-1 hover:bg-blue-700;
+    @apply w-full text-sm p-2 rounded my-1;
   }
 
   .icon-btn {
-    @apply text-xl text-slate-300 cursor-pointer hover:text-[#2B85FF];
+    @apply text-xl cursor-pointer;
   }
 
   .input-label {
-    @apply text-xs text-slate-400;
+    @apply text-xs;
   }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
 }
