@@ -99,7 +99,7 @@ const UserAvatar = ({ userInfo }) => {
   const handleLogout = async () => {
     try {
       // Make API call to logout
-      await axios.get("http://note-219z.onrender.com/api/auth/signout", {
+      await axios.get("https://note-219z.onrender.com/api/auth/signout", {
         withCredentials: true,
       });
       // Redirect to login page
@@ -285,7 +285,7 @@ const Home = () => {
   const getAllNotes = async () => {
     setIsLoading(true);
     try {
-      const res = await axios.get("http://note-219z.onrender.com/api/note/all", {
+      const res = await axios.get("https://note-219z.onrender.com/api/note/all", {
         withCredentials: true,
       });
 
