@@ -393,40 +393,7 @@ const SignUp = () => {
               </button>
             </form>
 
-            {/* Social Login */}
-            <div className="mt-6">
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <div className={`w-full border-t ${getThemeClass('divider')}`} />
-                </div>
-                <div className="relative flex justify-center">
-                  <span className={`px-3 ${getThemeClass('cardBg')} text-sm ${getThemeClass('lightText')} font-medium`}>
-                    Or sign up with
-                  </span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-3 mt-5">
-                <button
-                  type="button"
-                  className={`flex items-center justify-center py-2 px-4 border ${getThemeClass('socialBorder')} 
-                             rounded-xl ${getThemeClass('socialBg')} transition-colors shadow-sm hover:shadow
-                             ${getThemeClass('secondaryText')} hover:text-[#6610f2] group`}
-                >
-                  <FaGoogle className="text-red-500 mr-2 group-hover:scale-110 transition-transform duration-200" size={16} />
-                  <span className="text-sm font-medium">Google</span>
-                </button>
-                <button
-                  type="button"
-                  className={`flex items-center justify-center py-2 px-4 border ${getThemeClass('socialBorder')} 
-                             rounded-xl ${getThemeClass('socialBg')} transition-colors shadow-sm hover:shadow
-                             ${getThemeClass('secondaryText')} hover:text-[#6610f2] group`}
-                >
-                  <FaFacebook className="text-blue-600 mr-2 group-hover:scale-110 transition-transform duration-200" size={16} />
-                  <span className="text-sm font-medium">Facebook</span>
-                </button>
-              </div>
-            </div>
+           
 
             {/* Login Link */}
             <div className={`mt-6 text-center text-sm ${getThemeClass('lightText')}`}>
